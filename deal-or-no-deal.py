@@ -61,7 +61,7 @@ def printSelectedCaseInformation():
 def bankOffer():
     global gameRound
 
-    # My best guess at how they calculate the bank offer. I was unable to anything exact online
+    # My best guess at how they calculate the bank offer. I was unable to find anything exact online
     bankOffer = 0
     for prize in prizes:
         bankOffer += prize
