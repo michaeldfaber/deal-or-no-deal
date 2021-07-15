@@ -4,6 +4,7 @@ import os
 import random as random
 
 def clear():
+    # On windows, 'clear' does not error out, so I'm hoping 'cls' doesn't error out on Linux
     os.system('clear')
     os.system('cls')
 
@@ -60,6 +61,7 @@ def printSelectedCaseInformation():
 def bankOffer():
     global gameRound
 
+    # My best guess at how they calculate the bank offer. I was unable to anything exact online
     bankOffer = 0
     for prize in prizes:
         bankOffer += prize
@@ -145,7 +147,7 @@ def dealOrNoDeal():
     global caseSelectionsRemaining
     global selectedCaseNumber
 
-    print("\nWelcome to deal or no deal!\n")
+    print("\nWelcome to Deal or No Deal!\n")
     print("We're going to assume that you're familiar with the rules of the game and continue without an explanation of them.\n")
     print("We'll start by having you pick your case. Choose a number between 1 and 26: ")
 
